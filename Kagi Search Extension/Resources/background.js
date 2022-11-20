@@ -1,6 +1,8 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request: ", request);
-
-    if (request.greeting === "hello")
-        sendResponse({ farewell: "goodbye" });
+chrome.webNavigation.onBeforeNavigate.addListener(function(details) {
+    let url = details.url;
+    if (typeof(url) !== "undefined" && url.startsWith(`https://kagi.com`)) {
+        chrome.storage.local.set({ lastKagiUrl: url });
+    } else {
+        chrome.storage.local.set({ lastKagiUrl: "" });
+    }
 });

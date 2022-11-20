@@ -22,9 +22,6 @@
 		3BCF0C322929A7C300437E97 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF0C312929A7C300437E97 /* manifest.json */; };
 		3BCF0C342929A7C300437E97 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF0C332929A7C300437E97 /* background.js */; };
 		3BCF0C362929A7C300437E97 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF0C352929A7C300437E97 /* content.js */; };
-		3BCF0C382929A7C300437E97 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF0C372929A7C300437E97 /* popup.html */; };
-		3BCF0C3A2929A7C300437E97 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF0C392929A7C300437E97 /* popup.css */; };
-		3BCF0C3C2929A7C300437E97 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF0C3B2929A7C300437E97 /* popup.js */; };
 		3BCF0C3E2929A7C300437E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF0C1F2929A7C300437E97 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -71,9 +68,6 @@
 		3BCF0C312929A7C300437E97 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		3BCF0C332929A7C300437E97 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
 		3BCF0C352929A7C300437E97 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		3BCF0C372929A7C300437E97 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		3BCF0C392929A7C300437E97 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		3BCF0C3B2929A7C300437E97 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		3BCF0C3D2929A7C300437E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,9 +150,6 @@
 				3BCF0C312929A7C300437E97 /* manifest.json */,
 				3BCF0C332929A7C300437E97 /* background.js */,
 				3BCF0C352929A7C300437E97 /* content.js */,
-				3BCF0C372929A7C300437E97 /* popup.html */,
-				3BCF0C392929A7C300437E97 /* popup.css */,
-				3BCF0C3B2929A7C300437E97 /* popup.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -258,13 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BCF0C342929A7C300437E97 /* background.js in Resources */,
-				3BCF0C3A2929A7C300437E97 /* popup.css in Resources */,
-				3BCF0C382929A7C300437E97 /* popup.html in Resources */,
 				3BCF0C302929A7C300437E97 /* images in Resources */,
 				3BCF0C322929A7C300437E97 /* manifest.json in Resources */,
 				3BCF0C2E2929A7C300437E97 /* _locales in Resources */,
 				3BCF0C362929A7C300437E97 /* content.js in Resources */,
-				3BCF0C3C2929A7C300437E97 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -391,6 +380,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=*]" = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -445,7 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = N9RU4UJVVD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kagi Search Extension/Info.plist";
@@ -475,7 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = N9RU4UJVVD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kagi Search Extension/Info.plist";
@@ -508,7 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = N9RU4UJVVD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kagi Search/Info.plist";
@@ -545,7 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = N9RU4UJVVD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Kagi Search/Info.plist";
