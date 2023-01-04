@@ -51,4 +51,4 @@ fastlane/FastlaneRunner
 
 *.zip
 *.ipa
-
+*.env
