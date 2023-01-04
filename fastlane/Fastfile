@@ -59,7 +59,7 @@ platform :ios do
 
     gym(
       configuration: "Release",
-      workspace: "project.xcworkspace",
+      workspace: "Kagi Search.xcodeproj/project.xcworkspace",
       scheme: "Kagi Search",
       export_method: "development",
       export_options: {
