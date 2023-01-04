@@ -61,7 +61,7 @@ platform :ios do
       configuration: "Release",
       workspace: "Kagi Search.xcodeproj/project.xcworkspace",
       scheme: "Kagi Search",
-      export_method: "development",
+      export_method: "app-store",
       export_options: {
         provisioningProfiles: {
             DEVELOPER_APP_ID => PROVISIONING_PROFILE_SPECIFIER
